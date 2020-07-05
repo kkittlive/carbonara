@@ -37,6 +37,16 @@ $raleway: 'Raleway', sans-serif;
 }
 
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 ///////////////////////////////////////////////////////////////////////////////
 //                                                                           //
 //                                  Styling                                  //
@@ -56,6 +66,7 @@ a {
 
   &:hover {
     color: $cream !important;
+    text-decoration: none !important;
   }
 }
 
@@ -68,6 +79,17 @@ a {
 
   @include sm {
     font-size: 40px;
+  }
+}
+
+.home-icon {
+  filter: invert(87%) sepia(99%) saturate(6751%) hue-rotate(303deg) brightness(104%) contrast(94%);
+  padding-top: 0.5em;
+  transition: all .5s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+    transform: scale(1.3);
   }
 }
 
@@ -128,7 +150,7 @@ ol {
 ///////////////////////////////////////////////////////////////////////////////
 
 .home-content {
-  // background-color: $beige;
+
 }
 
 .home-text {
@@ -179,6 +201,19 @@ ol {
     // border-top: 1px solid $cream !important;
     // border-bottom-style: none;
   }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           //
+//                                Recipe Pages                               //
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+.recipe-wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+
+  animation: 1s ease-out 0s 1 slideInFromRight !important;
 }
 
 
