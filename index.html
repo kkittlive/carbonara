@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/f46af8e79a.js" crossorigin="anonymous"></script>
 
+  <link rel="icon" type="image/png" href="favicon.png">
   <title>Carbonara - Hammerhoot</title>
 </head>
 
@@ -18,38 +20,67 @@
       <div class="video-container">
         <div class="video-overlay"></div>
         <video muted autoplay loop><source src="media/campfire.mp4" type="video/mp4"></video>
-      </div>
-
-      <div class="home-content row">
-        <div class="home-text col-12 col-lg-6 p-5">
-          <h1 class="title">CARBONARA</h1>
-          <p><span>/ˈkɑrbonɑːrɑ/</span> <span class="noun">noun</span></p>
-          <p class="origin">From the Italian <i>carbonara</i>, shortening of <i>alla carbonara</i> (literally “in the manner of charcoal burners”, or “in the manner of the Carbonari”), ultimately from <i>carbone</i> (“coal”).</p>
-          <ol>
-            <li><span>A thick Italian pasta sauce, made with guanciale, grated cheese, beaten egg yolks, and pepper.</span></li>
-            <li><span>[by extension] A spaghetti dish made using such a sauce.</span></li>
-          </ol>
-          <p><i>see also: <a href="" target="_blank">cacio el pepe</a></i></p>
         </div>
 
-        <div class="home-grid col-12 col-lg-6">
-          <div class="row d-flex">
-            <div class="home-grid__cell col-12 col-md-6 p-5 p-lg-4 d-flex align-items-end">CLASSIC</div>
-            <div class="home-grid__cell col-12 col-md-6 p-5 p-lg-4 d-flex align-items-end">AVANT-GARDE</div>
-            <div class="home-grid__cell col-12 col-md-6 p-5 p-lg-4 d-flex align-items-end">BACKWOODS</div>
-            <div class="home-grid__cell col-12 col-md-6 p-5 p-lg-4 d-flex align-items-end">MORE</div>
+        <div class="home-content row">
+          <div class="home-text col-12 col-lg-6 p-5">
+            <h1 class="title">CARBONARA</h1>
+            <p><span>/ˈkɑrbonɑːrɑ/</span> <span class="noun">noun</span></p>
+            <p class="origin">From the Italian <i>carbonara</i>, shortening of <i>alla carbonara</i> (literally “in the manner of charcoal burners”, or “in the manner of the Carbonari”), ultimately from <i>carbone</i> (“coal”).</p>
+            <ol>
+              <li><span>A thick Italian pasta sauce, made with guanciale, grated cheese, beaten egg yolks, and pepper.</span></li>
+              <li><span>[by extension] A spaghetti dish made using such a sauce.</span></li>
+            </ol>
+            <p><i>see also: <a class="gudetama-link">gudetama</a> by <a href="https://www.deviantart.com/sodadog" target="_blank">SodaDog</a></i></p>
+          </div>
+
+          <div class="home-grid col-12 col-lg-6">
+            <div class="row d-flex">
+              <div class="home-grid__cell col-12 col-md-6 p-5 p-lg-4 d-flex align-items-end">CLASSIC</div>
+              <div class="home-grid__cell col-12 col-md-6 p-5 p-lg-4 d-flex align-items-end">AVANT-GARDE</div>
+              <div class="home-grid__cell col-12 col-md-6 p-5 p-lg-4 d-flex align-items-end">BACKWOODS</div>
+              <div class="home-grid__cell col-12 col-md-6 p-5 p-lg-4 d-flex align-items-end">MORE</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
       <div class="main-right col-1">
 
       </div>
     </div>
 
+    <!----------------------------------------------------------------------------->
+    <!--                                 MODALS                                  -->
+    <!----------------------------------------------------------------------------->
+
+    <div class="modal fade" id="gudetamaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="opacity: 0.8;">
+          <div class="modal-body p-0">
+            <button type="button" class="close position-absolute" style="right: 0.5em; bottom: 0.5em;" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+            </button>
+            <img id="gudetama-img" src="media/gudetama.png" alt="gudetama egg cartoon carbonara">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------------------------------------------------->
+    <!--                                 SCRIPTS                                 -->
+    <!----------------------------------------------------------------------------->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+      document.querySelector('video').play();
+
+      const gudetamaLink = document.querySelector('.gudetama-link');
+      gudetamaLink.addEventListener('click', (event) => {
+        $('#gudetamaModal').modal('show')
+      })
+    </script>
+
   </body>
   </html>
