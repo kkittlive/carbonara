@@ -62,13 +62,6 @@ ol {
   background: #000;
   background: linear-gradient(40deg, black 0%, rgba(0, 0, 0, 0.2) 70%);
   transition: all 0.5s ease; }
-  .home-grid__cell:nth-child(2) {
-    border-left-style: none; }
-  .home-grid__cell:nth-child(3) {
-    border-top-style: none; }
-  .home-grid__cell:nth-child(4) {
-    border-left-style: none;
-    border-top-style: none; }
   .home-grid__cell:hover {
     background-color: #000;
     opacity: 0.5;
@@ -80,8 +73,6 @@ ol {
   @media (max-width: 768px) {
     .home-grid__cell {
       transition: all 0.5s ease;
-      height: 25vh !important;
-      border-top: 1px solid #F7BD7E !important;
-      border-bottom-style: none; } }
+      height: 25vh !important; } }
 
 /*# sourceMappingURL=style.css.map */

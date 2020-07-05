@@ -139,16 +139,16 @@ ol {
   background: #000;
   background: linear-gradient(40deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2) 70%);
 
-  &:nth-child(2) {
-    border-left-style: none;
-  }
-  &:nth-child(3) {
-    border-top-style: none;
-  }
-  &:nth-child(4) {
-    border-left-style: none;
-    border-top-style: none;
-  }
+  // &:nth-child(2) {
+  //   border-left-style: none;
+  // }
+  // &:nth-child(3) {
+  //   border-top-style: none;
+  // }
+  // &:nth-child(4) {
+  //   border-left-style: none;
+  //   border-top-style: none;
+  // }
 
   transition: all 0.5s ease;
   &:hover {
@@ -165,7 +165,7 @@ ol {
   @include md {
     transition: all 0.5s ease;
     height: 25vh !important;
-    border-top: 1px solid $cream !important;
-    border-bottom-style: none;
+    // border-top: 1px solid $cream !important;
+    // border-bottom-style: none;
   }
 }
