@@ -59,7 +59,8 @@ ol {
   color: #F7BD7E;
   letter-spacing: 0.1em;
   height: 50vh;
-  border: 1px solid #F7BD7E;
+  background: #000;
+  background: linear-gradient(40deg, black 0%, rgba(0, 0, 0, 0.2) 70%);
   transition: all 0.5s ease; }
   .home-grid__cell:nth-child(2) {
     border-left-style: none; }
