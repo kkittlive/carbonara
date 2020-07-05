@@ -1,0 +1,170 @@
+// Colours
+$greenish: #2E5339;
+$redish: #CA3C2D;
+$beige: #E3DCC2;
+$cream: #F7BD7E;
+
+
+// Fonts
+$antic: 'Antic Didone', serif;
+$raleway: 'Raleway', sans-serif;
+
+
+// Breakpoints
+// Up to and including cellphones
+@mixin sm {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+// " " small tablets and large smartphones (landscape view)
+@mixin md {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+// " " small tablets (portrait view)
+@mixin lg {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+// " " tablets and small desktops
+@mixin xl {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           //
+//                                  Styling                                  //
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+body {
+  font-family: $raleway !important;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  color: $beige !important;
+}
+
+a {
+  color: $cream !important;
+
+  &:hover {
+    color: $cream !important;
+  }
+}
+
+.title {
+  color: $cream;
+  font-family: $antic;
+  font-size: 48px;
+  letter-spacing: 0.2em;
+  margin-bottom: 80px;
+
+  @include sm {
+    font-size: 40px;
+  }
+}
+
+.origin {
+  font-weight: 100;
+}
+
+ol {
+  padding-inline-start: 24px;
+}
+
+.noun {
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 500;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           //
+//                                   Video                                   //
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+.video-container {
+  position: sticky;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.video-overlay {
+  position: absolute;
+  float:left;
+  width: 100vw;
+  min-height: 100vh;
+  background-color:#000;
+  opacity: 0.4;
+  z-index:300000;
+}
+
+.video-container video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           //
+//                                 Home Grid                                 //
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+.home-content {
+  // background-color: $beige;
+}
+
+.home-text {
+  @include md {
+    padding-bottom: 80px !important;
+  }
+}
+
+.home-grid__cell {
+  color: $cream;
+  letter-spacing: 0.1em;
+  height: 50vh;
+  border: 1px solid $cream;
+
+  &:nth-child(2) {
+    border-left-style: none;
+  }
+  &:nth-child(3) {
+    border-top-style: none;
+  }
+  &:nth-child(4) {
+    border-left-style: none;
+    border-top-style: none;
+  }
+
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #000;
+    opacity: 0.5;
+    font-size: 1.3em;
+  }
+
+  @include lg {
+    transition: all 0.5s ease;
+    height: 30vh;
+  }
+
+  @include md {
+    transition: all 0.5s ease;
+    height: 25vh !important;
+    border-top: 1px solid $cream !important;
+    border-bottom-style: none;
+  }
+}
